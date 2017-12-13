@@ -3,6 +3,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Function to remove any tooltips
+RemoveToolTip:
+SetTimer, RemoveToolTip, Off
+ToolTip
+return
+
+
 ; ****************************************************************
 ; ******** AHK Shortcuts for using the Tribal SITS Client ********
 
